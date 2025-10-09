@@ -6,8 +6,6 @@
 #include <stdio.h>
 //Includes -- END
 
-
-
 int	ft_isalpha(char c);
 
 #endif

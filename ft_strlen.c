@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 20:05:39 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/09 21:01:32 by dzhukov          ###   ########.fr       */
+/*   Created: 2025/10/09 21:25:13 by dzhukov           #+#    #+#             */
+/*   Updated: 2025/10/09 21:26:53 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char c)
+int	ft_strlen(char *str)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
+	int	count;
 
-// int	main(void)
-// {
-// 	printf("Res: %d\n", ft_isalpha('A'));
-// 	return (0);
-// }
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
