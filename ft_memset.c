@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 21:29:15 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/13 13:45:14 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/13 16:02:44 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	co;
+	int				i;
+	unsigned char	*ptr;
 
-	co = c;
-	while (s[n] != '\0')
+	ptr = (unsigned char *)s;
+	i = 0;
+	while (n > 0)
 	{
-		s[n] = co;
-		n++;
+		ptr[i] = c;
+		i++;
+		n--;
 	}
 }
-
-
