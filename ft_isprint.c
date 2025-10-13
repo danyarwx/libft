@@ -6,13 +6,13 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 21:18:10 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/09 21:22:07 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/13 14:05:59 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c > 31 && c < 127)
 		return (1);
