@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:33:26 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/13 19:26:15 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/14 13:23:56 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,22 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	ptr_d = (unsigned char *)dest;
 	ptr_s = (const unsigned char *)src;
 	if (dest == src || n == 0)
-	return (dest);
-	unsigned char		temp[n];
-	i = 0;
-	while (i < n)
+		return (dest);
+	if (dest > src)
 	{
-		temp[i] = ptr_s[i];
-		i++;
+		while (n-- > 0)
+		{
+			ptr_d[n] = ptr_s[n];
+		}
 	}
-	i = 0;
-	while (i < n)
+	else
 	{
-		ptr_d[i] = temp[i];
-		i++;
+		i = 0;
+		while (i < n)
+		{
+			ptr_d[i] = ptr_s[i];
+			i++;
+		}
 	}
 	return (dest);
 }
-
