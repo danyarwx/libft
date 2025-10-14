@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:09:28 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/13 18:32:36 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/14 15:54:10 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (ptr_d != ptr_s)
-			ptr_d[i] = ptr_s[i];
+		ptr_d[i] = ptr_s[i];
 		i++;
 	}
 	return (dest);
