@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 18:50:43 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/15 14:18:35 by dzhukov          ###   ########.fr       */
+/*   Created: 2025/10/15 15:00:33 by dzhukov           #+#    #+#             */
+/*   Updated: 2025/10/15 15:37:19 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-char	*strnstr(const char *big, const char *little, size_t len)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
+	unsigned char *ptr;
 	size_t	i;
-	size_t	little_len;
 
-	little_len = ft_strlen(little);
-	if (little_len == 0)
-		return ((char *)big);
+	ptr = (unsigned char *)malloc(nmemb * size);
+
+	if (ptr == NULL || nmemb == 0 || size == 0)
+		return (ptr);
+
 	i = 0;
-	while (big[i] && (i + little_len) <= len)
+	while (i < nmemb * size)
 	{
-		if (ft_strncmp(little, big + i, little_len) == 0)
-			return ((char *)(big + i));
+		ptr[i] = 0;
 		i++;
 	}
-	return (NULL);
+	return (ptr);
 }
