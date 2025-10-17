@@ -6,11 +6,13 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 19:24:33 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/16 19:56:56 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/17 10:50:30 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//TO CHECK!!!
 
 int	ft_isset(char c, char const *set)
 {
