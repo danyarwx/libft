@@ -6,11 +6,65 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:52:48 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/17 12:56:08 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/18 20:02:01 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// size_t	ft_strlen(const char *s)
+// {
+// 	size_t	count;
+
+// 	count = 0;
+// 	while (s[count] != '\0')
+// 	{
+// 		count++;
+// 	}
+// 	return (count);
+// }
+
+// void	*ft_calloc(size_t nmemb, size_t size)
+// {
+// 	unsigned char	*ptr;
+// 	size_t			i;
+
+// 	ptr = (unsigned char *)malloc(nmemb * size);
+// 	if (ptr == NULL || nmemb == 0 || size == 0)
+// 		return (ptr);
+// 	i = 0;
+// 	while (i < nmemb * size)
+// 	{
+// 		ptr[i] = 0;
+// 		i++;
+// 	}
+// 	return (ptr);
+// }
+
+// char	*ft_substr(char const *s, unsigned int start, size_t len)
+// {
+// 	size_t	n;
+// 	size_t	i;
+// 	char	*ptr;
+
+// 	n = ft_strlen(s);
+// 	if (start >= n || !s)
+// 		return (NULL);
+// 	n += start;
+// 	if (len > n)
+// 		len = n;
+// 	ptr = (char *)ft_calloc(len + 1, sizeof(char));
+// 	if (!ptr)
+// 		return (NULL);
+// 	i = 0;
+// 	while (i < len)
+// 	{
+// 		ptr[i] = s[start + i];
+// 		i++;
+// 	}
+// 	ptr[i] = '\0';
+// 	return (ptr);
+// }
 
 size_t	count_words(const char *str, char del)
 {
@@ -27,58 +81,16 @@ size_t	count_words(const char *str, char del)
 	}
 	return (count);
 }
-size_t	ft_strlen(const char *s)
+
+void	*ft_free(char **arr, size_t index)
 {
-	size_t	count;
-
-	count = 0;
-	while (s[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
-
-void	*ft_calloc(size_t nmemb, size_t size)
-{
-	unsigned char	*ptr;
-	size_t			i;
-
-	ptr = (unsigned char *)malloc(nmemb * size);
-	if (ptr == NULL || nmemb == 0 || size == 0)
-		return (ptr);
-	i = 0;
-	while (i < nmemb * size)
-	{
-		ptr[i] = 0;
-		i++;
-	}
-	return (ptr);
-}
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	size_t	n;
 	size_t	i;
-	char	*ptr;
 
-	n = ft_strlen(s);
-	if (start >= n || !s)
-		return (NULL);
-	n += start;
-	if (len > n)
-		len = n;
-	ptr = (char *)ft_calloc(len + 1, sizeof(char));
-	if (!ptr)
-		return (NULL);
 	i = 0;
-	while (i < len)
-	{
-		ptr[i] = s[start + i];
-		i++;
-	}
-	ptr[i] = '\0';
-	return (ptr);
+	while (i < index)
+		free(arr[i++]);
+	free(arr);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -90,8 +102,8 @@ char	**ft_split(char const *s, char c)
 
 	words = count_words(s, c);
 	arr = (char **)ft_calloc(words + 1, sizeof(char *));
-	if (!arr || words == 0)
-		return (NULL); // also need to free if allocation fails
+	if (!arr)
+		return (NULL); // also need to free if allocation fails or if words = 0?
 	i = 0;
 	while (i < words)
 	{
@@ -101,9 +113,8 @@ char	**ft_split(char const *s, char c)
 		while (s[j] != c)
 			j++;
 		arr[i] = ft_substr(s, 0, j);
-		if (!arr)
-			return (NULL);
-				// also free the whole array of strings and stop the program
+		if (!arr[i])`
+			return (ft_free(arr, i));
 		i++;
 		s += j;
 	}
