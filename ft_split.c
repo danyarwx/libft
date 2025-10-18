@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 10:52:48 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/18 20:02:01 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/18 20:06:22 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ char	**ft_split(char const *s, char c)
 		while (s[j] != c)
 			j++;
 		arr[i] = ft_substr(s, 0, j);
-		if (!arr[i])`
+		if (!arr[i])
 			return (ft_free(arr, i));
 		i++;
 		s += j;
