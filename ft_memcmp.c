@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 18:42:01 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 14:52:23 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:52:11 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if ((unsigned char)p1[i] != (unsigned char)p2[i])
 			return ((unsigned char)p1[i] - (unsigned char)p2[i]);
+		i++;
 	}
 	return (0);
 }

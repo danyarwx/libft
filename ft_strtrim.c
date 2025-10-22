@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 19:24:33 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:20:30 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 16:03:11 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	len = ft_strlen(s1);
 	if (len == 0)
-		return (NULL);
+		return (ft_strdup(""));
 	i = 0;
 	while (i < len && ft_isset(s1[len - 1 - i], set))
 		i++;
