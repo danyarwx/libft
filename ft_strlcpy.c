@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:25:47 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/14 14:39:09 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:08:15 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	i;
 	size_t	len_s;
 
 	len_s = ft_strlen(src);

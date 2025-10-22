@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:33:16 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/15 15:21:19 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:11:18 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == (char)c)
-			last = s + i;
+			last = (char *)&s[i];
 		i++;
 	}
 	if ((char)c == '\0')

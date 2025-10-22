@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:35:45 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 14:57:56 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:15:42 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ long long	count_len(long long n)
 char	*ft_itoa(int n)
 {
 	int			count;
-	char		temp;
 	char		*str;
 	long long	nn;
 

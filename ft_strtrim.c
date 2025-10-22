@@ -6,13 +6,13 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 19:24:33 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/17 10:50:30 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:20:30 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//TO CHECK!!!
+// TO CHECK!!!
 
 int	ft_isset(char c, char const *set)
 {
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	j;
 	size_t	last_id;
 	size_t	len;
-	char * ptr;
+	char	*ptr;
 
 	len = ft_strlen(s1);
 	if (len == 0)

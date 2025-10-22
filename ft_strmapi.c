@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:11:34 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/21 18:41:30 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 15:18:51 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[len] = '\0';
 	i = 0;
 	while (i < len)
-		str[i] = f(i, s[i++]);
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
 	return (str);
 }

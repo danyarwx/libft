@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/22 15:06:46 by dzhukov           #+#    #+#             */
+/*   Updated: 2025/10/22 15:20:46 by dzhukov          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -34,7 +46,7 @@ void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
-int	ft_isset(char c, char const *set); // Check this and strtrim
+int			ft_isset(char c, char const *set); // Check this and strtrim
 char		*ft_strtrim(char const *s1, char const *set);
 // ft_split
 size_t		count_words(const char *str, char del);
