@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:20:25 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/15 15:22:19 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 16:12:50 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)(s + i));
 		i++;
 	}
-	if (s[i] == c)
+	if (s[i] == (char)c)
 		return ((char *)(s + i));
 	return (NULL);
 }

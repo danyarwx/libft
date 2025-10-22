@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:47:52 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:57:00 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/22 17:28:24 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	n = ft_strlen(s);
 	if (!s)
 		return (NULL);
-	if (start >= n)
+	if (start > n)
 		return (ft_strdup(""));
-	n += start;
+	n = ft_strlen(s + start);
 	if (len > n)
 		len = n;
 	ptr = (char *)ft_calloc(len + 1, sizeof(char));
@@ -35,6 +35,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ptr[i] = s[start + i];
 		i++;
 	}
-	ptr[i] = '\0';
 	return (ptr);
 }
