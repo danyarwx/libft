@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:06:46 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/23 12:22:14 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/23 13:26:04 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,14 @@ void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
-int			ft_isset(char c, char const *set); // Check this and strtrim
+int			ft_isset(char c, char const *set);
 char		*ft_strtrim(char const *s1, char const *set);
-// ft_split
+
 size_t		ft_count_words(const char *str, char del);
 void		*ft_free(char **arr, size_t index);
 char		**ft_split(char const *s, char c);
-// ft_itoa
-long long	count_len(long long n);
+
+long long	ft_count_len(long long n);
 char		*ft_itoa(int n);
 
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));

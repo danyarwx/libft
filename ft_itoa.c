@@ -6,13 +6,13 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:35:45 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:15:42 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/23 13:25:34 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long	count_len(long long n)
+long long	ft_count_len(long long n)
 {
 	int	count;
 
