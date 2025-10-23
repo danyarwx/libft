@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:06:46 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:20:46 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/23 12:22:14 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char		*ft_strjoin(char const *s1, char const *s2);
 int			ft_isset(char c, char const *set); // Check this and strtrim
 char		*ft_strtrim(char const *s1, char const *set);
 // ft_split
-size_t		count_words(const char *str, char del);
+size_t		ft_count_words(const char *str, char del);
 void		*ft_free(char **arr, size_t index);
 char		**ft_split(char const *s, char c);
 // ft_itoa
