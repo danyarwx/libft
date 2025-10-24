@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:33:26 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/14 13:23:56 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/24 20:00:10 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (dest > src)
 	{
 		while (n-- > 0)
-		{
 			ptr_d[n] = ptr_s[n];
-		}
 	}
 	else
 	{
