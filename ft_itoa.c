@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:35:45 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/24 10:21:22 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 12:14:43 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,59 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-////////////////////////////////////////////////////////////////////////////////
-
-// #include <stdlib.h>
-
-// void	*ft_calloc(size_t nmemb, size_t size)
-// {
-// 	unsigned char	*ptr;
-// 	size_t			i;
-
-// 	ptr = (unsigned char *)malloc(nmemb * size);
-// 	if (!ptr || nmemb == 0 || size == 0)
-// 		return (NULL);
-// 	i = 0;
-// 	while (i < nmemb * size)
-// 	{
-// 		ptr[i] = 0;
-// 		i++;
-// 	}
-// 	return (ptr);
-// }
-
-// void	test_itoa(int n)
-// {
-// 	char	*res;
-
-// 	res = ft_itoa(n);
-// 	if (!res)
-// 	{
-// 		printf("ft_itoa(%d) returned NULL\n", n);
-// 		return ;
-// 	}
-// 	printf("ft_itoa(%d) = \"%s\"\n", n, res);
-// 	free(res);
-// }
-
-// int	main(void)
-// {
-// 	printf("=== Testing ft_itoa ===\n");
-// 	// 1️⃣ Basic numbers
-// 	test_itoa(0);
-// 	test_itoa(1);
-// 	test_itoa(-1);
-// 	test_itoa(42);
-// 	test_itoa(-42);
-// 	test_itoa(12345);
-// 	test_itoa(-12345);
-// 	// 2️⃣ Edge cases
-// 	test_itoa(2147483647);  // INT_MAX
-// 	test_itoa(-2147483648); // INT_MIN (watch for overflow)
-// 	// 3️⃣ Larger / smaller values
-// 	test_itoa(1000000000);
-// 	test_itoa(-1000000000);
-// 	printf("=== End of tests ===\n");
-// 	return (0);
-// }
