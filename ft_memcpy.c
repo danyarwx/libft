@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:09:28 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:20:12 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 19:59:10 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,22 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// #include <unistd.h>
-// int main(void)
-// {
-// 	char str[] = "hello";
-// 	// char str2[] = "world";
-// 	char *str2 = str;
-
-// 	ft_memcpy(str, str2, 5);
-
-// 	int i = 0;
-// 	while (str[i] != '\0')
-// 	{
-// 		write(1, (str + i), 1);
-// 		i++;
-// 	}
-
-// 	return (0);
-// }

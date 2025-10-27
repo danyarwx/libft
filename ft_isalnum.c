@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 20:56:15 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/13 14:04:37 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 19:58:37 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-// int main(void)
-// {
-// 	char c = 'a';
-
-// 	printf("The result is %d.", ft_isalnum(c));
-
-// 	return (0);
-// }

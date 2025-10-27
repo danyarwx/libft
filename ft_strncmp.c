@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:57:50 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/14 18:21:38 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 20:00:01 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[] = "you";
-// 	char	str2[] = "you";
-
-// 	printf("The result is : %d.", ft_strncmp(str, str2, 7));
-// 	return (0);
-// }

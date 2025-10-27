@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 20:05:39 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/22 15:34:34 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 19:58:42 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("Res: %d\n", ft_isalpha('0'));
-// 	return (0);
-// }

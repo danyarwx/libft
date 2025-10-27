@@ -6,7 +6,7 @@
 /*   By: dzhukov <dzhukov@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 21:25:13 by dzhukov           #+#    #+#             */
-/*   Updated: 2025/10/13 15:53:41 by dzhukov          ###   ########.fr       */
+/*   Updated: 2025/10/27 19:59:55 by dzhukov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (count);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int main(void) {
-// 	printf("%d", strlen(NULL));
-// }
